@@ -6,13 +6,16 @@ let primeiroNumero = readline.questionInt("Digite o primeiro numero: ");
 let segundoNumero = readline.questionInt("Digite o segundo numero: ");
 
 
-if (primeiroNumero < segundoNumero){
-    
-    for(let i = primeiroNumero; i < segundoNumero; i++){
+if (primeiroNumero < segundoNumero) {
 
-        if ((i % 3  ) === 0 && (i % 5) === 0){
+    for (let i = primeiroNumero; i < segundoNumero; i++) {
+
+        if ((i % 3) === 0 && (i % 5) === 0) {
             console.log(`${i} e ${segundoNumero} é multiplo de 3 e 5`);
-        } 
+        }
+    
     }
-} 
+} else {
+    console.log("Intervalo Inválido!");
+}
 
